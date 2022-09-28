@@ -1,1 +1,11 @@
 
+import random
+def sensor (temp, hum) : #defining sensor function contains arguments temparature and humidity
+      if (temp>100 and hum>100) : #checking condition if it exists optimum temparature and humidity
+          print("ALERT-TEMPRATUE IS ABOVE THRESHOLD")
+      else:
+          print ("NORMAL TEMPRATURE")
+while (1):
+   temp  = random.randrange (30, 500) #creating a random function with limit for temperature 
+   hum = random.randrange (30, 500) #creating a random function with limit for humidity
+   sensor (temp, hum) #calling sensor function
